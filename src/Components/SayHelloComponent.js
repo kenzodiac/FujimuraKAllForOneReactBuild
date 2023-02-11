@@ -1,10 +1,11 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Row, Col, Button } from 'react-bootstrap';
 import { useState, useEffect } from 'react';
-import { HelloApi } from '../Services/DataServices'
+import { HelloApi } from '../Services/DataServices';
+import berkeley from '../assets/images/berkeley.jpg';
 
 export default function SayHelloComponent(){
-    const [bgImage, setBgImage] = useState('https://www.animenewsnetwork.com/hotlink/thumbnails/crop1200x630gH0/herald/23265/mobile.suit.gundam.00.full.189661.jpg');
+    const [bgImage, setBgImage] = useState(berkeley);
 
     useEffect(() => {
         document.body.style.backgroundImage = `url(${bgImage})`;

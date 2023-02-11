@@ -1,13 +1,14 @@
 import { Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+import sanFrancisco from '../assets/images/sanfrancisco.webp'
 
 export default function HomeComponent(){
-    const [bgImage, setBgImage] = useState('https://i.ytimg.com/vi/1QcjvlpEeZw/maxresdefault.jpg');
+    const [bgImage, setBgImage] = useState(sanFrancisco);
 
     useEffect(() => {
         document.body.style.backgroundImage = `url(${bgImage})`;
-    }, []);
+    }, [bgImage]);
     
     return (
         <>
@@ -19,7 +20,7 @@ export default function HomeComponent(){
                     <div className="index-page-titles-txt-area"><Link to="AddTwoNumbers" className="page-links">#2: Add Two Numbers</Link></div>
                 </Col>
                 <Col className="index-page-tiles minich3-bg px-0">
-                    <div className="index-page-titles-txt-area">#3: Asking Questions</div>
+                    <div className="index-page-titles-txt-area"><Link to="AskingQuestions" className="page-links">#3: Asking Questions</Link></div>
                 </Col>
             </Row>
             <Row className="index-page-tiles-padding2">

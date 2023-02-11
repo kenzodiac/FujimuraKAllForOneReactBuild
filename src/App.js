@@ -28,7 +28,7 @@ function App() {
                       <NavDropdown title="Pages" id="basic-nav-dropdown">
                         <NavDropdown.Item as={Link} to="SayHello">#1: Say Hello</NavDropdown.Item>
                         <NavDropdown.Item as={Link} to="AddTwoNumbers">#2: Add Two Numbers</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.3">#3: Asking Questions</NavDropdown.Item>
+                        <NavDropdown.Item as={Link} to="AskingQuestions">#3: Asking Questions</NavDropdown.Item>
                         <NavDropdown.Item href="#action/3.4">#4: Greater or Less Than</NavDropdown.Item>
                         <NavDropdown.Item href="#action/3.5">#5: Mad Lib</NavDropdown.Item>
                         <NavDropdown.Item href="#action/3.6">#6: Odd or Even</NavDropdown.Item>
@@ -51,6 +51,7 @@ function App() {
             <Route path="/" element={<HomeComponent/>} />
             <Route path="SayHello" element={<SayHelloComponent/>} />
             <Route path="AddTwoNumbers" element={<AddTwoNumbersComponent/>} />
+            <Route path="AskingQuestions" element={<AskingQuestionsComponent/>} />
           </Routes>
         </Container>
 
