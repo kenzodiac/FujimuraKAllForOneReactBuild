@@ -1,16 +1,13 @@
+/* ~~~~~~~~~~~~~~ FONTS ~~~~~~~~~~~~~~ */
+@font-face {
+  font-family: Inter;
+  src: url(./assets/fonts/Inter.ttf);
+}
+
+
+/* ~~~~~~~~~~~~~~ MAIN BODY ~~~~~~~~~~~~~~ */
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {
@@ -24,15 +21,305 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+body{
+  background-color: blue;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-image: url("./assets/images/sanfrancisco.webp");
+  min-width: 94rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* ~~~~~~~~~~~~~~ NAVBAR ~~~~~~~~~~~~~~ */
+.navbar{
+  background-color: rgba(0, 0, 0, .8);
+  height: 6rem;
+}
+
+.nav-link{
+  font-family: Inter;
+  font-size: 2rem;
+  color: white;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.nav-link:hover{
+  text-decoration: underline;
+  color: white;
+}
+
+.navbar-brand{
+  font-family: Inter;
+  font-size: 2rem;
+  color: white;
+  padding-left: 1.688rem;
+}
+
+.navbar-brand:hover{
+  text-decoration: underline;
+  color: white;
+}
+
+/* ~~~~~~~~~~~~~~ BACKGROUND IMAGES ~~~~~~~~~~~~~~ */
+.index-bg{
+  background-image: url("./assets/images/sanfrancisco.webp");
+}
+
+.minich1-bg{
+  background-image: url("./assets/images/berkeley.jpg");
+}
+
+.minich2-bg{
+  background-image: url("./assets/images/davis.png");
+}
+
+.minich3-bg{
+  background-image: url("./assets/images/fresno.jpg");
+}
+
+.minich4-bg{
+  background-image: url("./assets/images/laketahoe.jpg");
+}
+
+.minich5-bg{
+  background-image: url("./assets/images/lodi.jpg");
+}
+
+.minich6-bg{
+  background-image: url("./assets/images/losangeles.png");
+}
+
+.minich7-bg{
+  background-image: url("./assets/images/sacramento.png");
+}
+
+.minich8-bg{
+  background-image: url("./assets/images/sandiego.webp");
+}
+
+.minich9-bg{
+  background-image: url("./assets/images/santabarbara.png");
+}
+
+/* ~~~~~~~~~~~~~~ MAIN PAGE STYLINGS ~~~~~~~~~~~~~~ */
+.index-page-tiles{
+  background-size: cover;
+  width: 30rem;
+  height: 12rem;
+  margin: .5rem;
+}
+
+.index-page-tiles-padding1{
+  padding-top: .5rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
+
+.index-page-titles-padding2{
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
+
+.index-page-titles-txt-area{
+  background-color: rgba(217, 217, 217, .8);
+  margin-top: 3rem;
+  padding-left: 2rem;
+  font-family: Inter;
+  font-size: 2rem;
+  color: black;
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+}
+
+.page-links{
+  color: black;
+}
+
+.page-links:link{
+  text-decoration: none;
+}
+
+.page-links:visited{
+  text-decoration: none;
+  color: rgba(0, 0, 0, .8);
+}
+
+.page-links:hover{
+  text-decoration: underline;
+  color: black;
+}
+
+.page-links:active{
+  color: black;
+}
+
+/* ~~~~~~~~~~~~~~ STAGING AREA ~~~~~~~~~~~~~~ */
+.staging-area{
+  background-color:rgba(0, 0, 0, .8);
+  width: 94rem;
+  max-width: 94rem;
+  height: 40rem;
+  margin-top: 7.5rem;
+}
+
+/* ~~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~ */
+.footer{
+  background-color: rgba(0, 0, 0, .8);
+  height: 6rem;
+  font-family: Inter;
+  font-size: 2rem;
+  color: white;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  margin-top: 8rem;
+}
+
+/* ~~~~~~~~~~~~~~ SUBPAGE STYLING ~~~~~~~~~~~~~~ */
+.body-txt{
+  font-family: Inter;
+  font-size: 3rem;
+  color: white;
+}
+
+.body-txt-2{
+  font-family: Inter;
+  font-size: 2rem;
+  color: white;
+}
+
+.body-spacing-1{
+  height: 40rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.body-spacing-2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 62.5rem;
+}
+
+.body-spacing-3{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 79.375rem;
+}
+
+.body-spacing-4{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 92rem;
+}
+
+.askingQs-return-txt{
+  margin-right: 6.25rem;
+  margin-left: 6.25rem;
+}
+
+.mad-lib-title{
+  margin-top: 1.813rem;
+  margin-bottom: 1.813rem;
+}
+
+.directory-column-ordering{
+  display: flex;
+  direction: column;
+  width: 50%;
+}
+
+.directory-row-ordering{
+  display: flex;
+  direction: row;
+}
+
+.default-form{
+  height: 5rem;
+  font-style: Inter;
+}
+
+.hello-form{
+  width: 52.375rem;
+}
+
+.add-two-nums-form{
+  width: 15.625rem;
+}
+
+.askingQs-form{
+  width: 33rem;
+}
+
+.mad-lib-form{
+  width: 30rem;
+  margin-bottom: 1rem;
+}
+
+.odd-even-form{
+  width: 19.875rem;
+}
+
+.reverse-form{
+  width: 62.5rem;
+  height: 12.5rem;
+  text-align: top;
+}
+
+.directory-form{
+  width: 24.688rem;
+  margin-top: 0.375rem;
+  margin-bottom: 1.625rem;
+}
+
+.form-control{
+  font-size: 3rem;
+}
+
+.submit-btn{
+  height: 5rem;
+  background-color: #FFA6A6;
+  font-size: 3rem;
+  font-family: Inter;
+  color: black;
+}
+
+.add-two-nums-btn{
+  width: 15.625rem;
+  height: 5rem;
+}
+
+.askingQs-btn{
+
+}
+
+.mad-lib-btn{
+  width: 30rem;
+  margin-bottom: 1rem;
+}
+
+.directory-btn{
+  width: 24.688rem;
+}
+
+.restaurant-btn{
+  height: 5rem;
+  width: 20rem;
+  background-color: #D9D9D9;
+  font-size: 3rem;
+  font-family: Inter;
+  color: black;
+  margin: 0.75rem;
+}
+
+.btn-outline-secondary{
+  background-color:#FFA6A6;
+  color: black;
 }
