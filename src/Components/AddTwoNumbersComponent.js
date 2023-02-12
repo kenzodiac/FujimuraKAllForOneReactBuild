@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Row, Col, Button } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 import { useState, useEffect } from 'react';
 import { AddApi } from '../Services/DataServices';
 import davis from '../assets/images/davis.png';
@@ -10,7 +10,7 @@ export default function AddTwoNumbersComponent(){
 
     useEffect(() => {
         document.body.style.backgroundImage = `url(${bgImage})`;
-    }, []);
+    }, [bgImage]);
 
     const [num1, setNum1] = useState('');
     const [num2, setNum2] = useState('');

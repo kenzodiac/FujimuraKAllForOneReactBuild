@@ -1,3 +1,8 @@
+// - Kenneth Fujimura
+// - Date Revised: 2/12/2023
+// - "All For One React Rebuild"
+// - This is a project where we rebuilt our "All For One" website of 9 mini challenge pages, but this time in React/Bootstrap/JSX. 
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';

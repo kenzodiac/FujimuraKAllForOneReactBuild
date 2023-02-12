@@ -9,7 +9,7 @@ export default function GreaterOrLessThanComponent() {
 
     useEffect(() => {
         document.body.style.backgroundImage = `url(${bgImage})`;
-    }, []);
+    }, [bgImage]);
 
     const [name1, setName1] = useState('');
     const [musicGenre1, setMusicGenre1] = useState('');

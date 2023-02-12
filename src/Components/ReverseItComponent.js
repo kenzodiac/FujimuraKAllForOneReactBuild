@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Row, Col, Button } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 import { useState, useEffect } from 'react';
 import { ReverseApi } from '../Services/DataServices';
 import sacramento from '../assets/images/sacramento.png';
@@ -9,7 +9,7 @@ export default function ReverseItComponent(){
 
     useEffect(() => {
         document.body.style.backgroundImage = `url(${bgImage})`;
-    }, []);
+    }, [bgImage]);
 
     const [input, setInput] = useState('');
     const [output, setOutput] = useState('');

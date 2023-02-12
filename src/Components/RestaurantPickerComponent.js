@@ -9,7 +9,7 @@ export default function RestaurantPickerComponent(){
 
     useEffect(() => {
         document.body.style.backgroundImage = `url(${bgImage})`;
-    }, []);
+    }, [bgImage]);
 
     const [output, setOutput] = useState('');
 
@@ -43,19 +43,3 @@ export default function RestaurantPickerComponent(){
         </>
     );
 }
-
-{/* <div class="col body-spacing-1">
-    <div class="body-txt text-center">Let's decide where to eat!<br>Where would you like to eat?</div>
-
-    <div class="">
-        <button id="submit1" class="btn submit-btn restaurant-btn" type="button">Lodi</button>
-        <button id="submit2" class="btn submit-btn restaurant-btn" type="button">Stockton</button>
-        <br>
-        <button id="submit3" class="btn submit-btn restaurant-btn" type="button">Fast Food</button>
-        <button id="submit4" class="btn submit-btn restaurant-btn" type="button">I don't care!</button>
-    </div>
-
-    <div id="restaurantReturn" class="body-txt">
-        &nbsp
-    </div>
-</div> */}

@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Row, Col, Button } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 import { useState, useEffect } from 'react';
 import { QuestionsApi } from '../Services/DataServices';
 import fresno from '../assets/images/fresno.jpg';
@@ -9,7 +9,7 @@ export default function AskingQuestionsComponent(){
 
     useEffect(() => {
         document.body.style.backgroundImage = `url(${bgImage})`;
-    }, []);
+    }, [bgImage]);
 
     const [name, setName] = useState('');
     const [time, setTime] = useState('');

@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Row, Col, Button } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 import { useState, useEffect } from 'react';
 import { GreaterThanApi } from '../Services/DataServices';
 import tahoe from '../assets/images/laketahoe.jpg';
@@ -9,7 +9,7 @@ export default function GreaterOrLessThanComponent(){
 
     useEffect(() => {
         document.body.style.backgroundImage = `url(${bgImage})`;
-    }, []);
+    }, [bgImage]);
 
     const [num1, setNum1] = useState('');
     const [num2, setNum2] = useState('');

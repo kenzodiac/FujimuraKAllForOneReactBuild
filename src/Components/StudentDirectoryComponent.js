@@ -9,7 +9,7 @@ export default function StudentDirectoryComponent(){
 
     useEffect(() => {
         document.body.style.backgroundImage = `url(${bgImage})`;
-    }, []);
+    }, [bgImage]);
 
     const [input, setInput] = useState('');
     const [output, setOutput] = useState('');
