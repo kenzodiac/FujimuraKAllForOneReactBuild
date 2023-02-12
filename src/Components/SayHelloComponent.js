@@ -38,17 +38,3 @@ export default function SayHelloComponent(){
         </>
     );
 }
-{/* <div class="row">
-    <div class="col body-spacing-1">
-        <div class="body-txt">Please tell me your name:</div>
-        
-        <div class="input-group mb-3 hello-form default-form">
-            <input id="nameInput" type="text" class="form-control" placeholder="Input Name Here" aria-label="Recipient's username" aria-describedby="button-addon2">
-            <button id="button-addon2" class="btn btn-outline-secondary" type="button">Submit</button>
-        </div>
-        
-        <div id="helloReturn" class="body-txt">
-            &nbsp
-        </div>
-    </div>
-</div> */}
