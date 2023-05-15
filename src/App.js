@@ -47,7 +47,7 @@ function App() {
                         <NavDropdown.Item as={Link} to="StudentDirectory">#8: Student Directory</NavDropdown.Item>
                         <NavDropdown.Item as={Link} to="RestaurantPicker">#9: Restaurant Picker</NavDropdown.Item>
                       </NavDropdown>
-                      <Nav.Link href="#link">About Me</Nav.Link>
+                      <Nav.Link href="https://www.linkedin.com/in/kensf">About Me</Nav.Link>
                     </Nav>
                   </Navbar.Collapse>
                 </Container>

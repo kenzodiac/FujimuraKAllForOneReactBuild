@@ -2,7 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Row, Col, Container } from 'react-bootstrap';
 import { useState, useEffect } from 'react';
 import { DirectoryApi } from '../Services/DataServices';
-import sanDiego from '../assets/images/sandiego.webp';
+import sanDiego from '../assets/images/sandiego.png';
 
 export default function StudentDirectoryComponent(){
     const [bgImage, setBgImage] = useState(sanDiego);

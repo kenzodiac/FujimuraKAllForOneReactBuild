@@ -26,7 +26,7 @@ body{
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
-  background-image: url("./assets/images/sanfrancisco.webp");
+  background-image: url("./assets/images/sanfrancisco.png");
   min-width: 94rem;
 }
 
@@ -63,7 +63,7 @@ body{
 
 /* ~~~~~~~~~~~~~~ BACKGROUND IMAGES ~~~~~~~~~~~~~~ */
 .index-bg{
-  background-image: url("./assets/images/sanfrancisco.webp");
+  background-image: url("./assets/images/sanfrancisco.png");
 }
 
 .minich1-bg{
@@ -95,7 +95,7 @@ body{
 }
 
 .minich8-bg{
-  background-image: url("./assets/images/sandiego.webp");
+  background-image: url("./assets/images/sandiego.png");
 }
 
 .minich9-bg{

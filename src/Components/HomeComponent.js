@@ -1,7 +1,7 @@
 import { Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import sanFrancisco from '../assets/images/sanfrancisco.webp'
+import sanFrancisco from '../assets/images/sanfrancisco.png'
 
 export default function HomeComponent(){
     const [bgImage, setBgImage] = useState(sanFrancisco);
